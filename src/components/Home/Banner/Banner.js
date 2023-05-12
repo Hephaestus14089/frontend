@@ -1,13 +1,14 @@
-// import BannerImg from "../../../assets/banner-img.png";
+import BannerImg from "../../../assets/banner-img.png";
+import './Banner.scss';
 
 const Banner = () => {
   return (
-    <div className="Banner">
+    <div className="hero-banner">
       <div className="content">
         <div className="text-content">
           <h1>SALES</h1>
           <p>
-            Just some random bullshit...
+            Just some random crap...
             which all the sales ads,
             in a way, actually is.
           </p>
@@ -17,7 +18,7 @@ const Banner = () => {
           </div>
         </div>
 
-        {/* <img src={BannerImg} alt="banner-im" /> */}
+        <img className="banner-img" src={BannerImg} />
       </div>
     </div>
   );

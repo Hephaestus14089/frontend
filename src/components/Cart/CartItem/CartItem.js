@@ -1,3 +1,5 @@
+import './CartItem.scss'
+
 const CartItem = () => {
   return (
     <div className="cart-products">
@@ -6,10 +8,10 @@ const CartItem = () => {
         </div>
         <div className="prod-details">
           <span className="name">product name</span>
-          <MdClose
-            className="close-btn"
-    /* onClick={() => handleRemoveFromCart(item)} */
-          />
+          {/* <MdClose */}
+          {/*   className="close-btn" */}
+          {/* onClick={() => handleRemoveFromCart(item)} */}
+          {/* /> */}
           <div className="quantity-buttons">
             {/* <span */}
             {/*   onClick={() => */}

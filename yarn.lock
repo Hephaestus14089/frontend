@@ -3750,6 +3750,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "axios@npm:1.4.0"
+  dependencies:
+    follow-redirects: ^1.15.0
+    form-data: ^4.0.0
+    proxy-from-env: ^1.1.0
+  checksum: 7fb6a4313bae7f45e89d62c70a800913c303df653f19eafec88e56cea2e3821066b8409bc68be1930ecca80e861c52aa787659df0ffec6ad4d451c7816b9386b
+  languageName: node
+  linkType: hard
+
 "axobject-query@npm:^3.1.1":
   version: 3.1.1
   resolution: "axobject-query@npm:3.1.1"
@@ -4262,7 +4273,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.4.2, chokidar@npm:^3.5.3":
+"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.4.2, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
   dependencies:
@@ -6209,7 +6220,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.0.0":
+"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.15.0":
   version: 1.15.2
   resolution: "follow-redirects@npm:1.15.2"
   peerDependenciesMeta:
@@ -6270,6 +6281,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"form-data@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "form-data@npm:4.0.0"
+  dependencies:
+    asynckit: ^0.4.0
+    combined-stream: ^1.0.8
+    mime-types: ^2.1.12
+  checksum: 01135bf8675f9d5c61ff18e2e2932f719ca4de964e3be90ef4c36aacfc7b9cb2fceb5eca0b7e0190e3383fe51c5b37f4cb80b62ca06a99aaabfcfd6ac7c9328c
+  languageName: node
+  linkType: hard
+
 "forwarded@npm:0.2.0":
   version: 0.2.0
   resolution: "forwarded@npm:0.2.0"
@@ -6298,11 +6320,15 @@ __metadata:
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^13.0.0
     "@testing-library/user-event": ^13.2.1
+    axios: ^1.4.0
+    material: ^0.5.3
     react: ^18.2.0
     react-dom: ^18.2.0
     react-icons: ^4.8.0
     react-router-dom: ^6.11.1
     react-scripts: 5.0.1
+    sass: ^1.62.1
+    styled: ^1.0.0
     web-vitals: ^2.1.0
   languageName: unknown
   linkType: soft
@@ -6982,6 +7008,13 @@ __metadata:
   version: 9.0.21
   resolution: "immer@npm:9.0.21"
   checksum: 70e3c274165995352f6936695f0ef4723c52c92c92dd0e9afdfe008175af39fa28e76aafb3a2ca9d57d1fb8f796efc4dd1e1cc36f18d33fa5b74f3dfb0375432
+  languageName: node
+  linkType: hard
+
+"immutable@npm:^4.0.0":
+  version: 4.3.0
+  resolution: "immutable@npm:4.3.0"
+  checksum: bbd7ea99e2752e053323543d6ff1cc71a4b4614fa6121f321ca766db2bd2092f3f1e0a90784c5431350b7344a4f792fa002eac227062d59b9377b6c09063b58b
   languageName: node
   linkType: hard
 
@@ -8608,6 +8641,13 @@ __metadata:
   dependencies:
     tmpl: 1.0.5
   checksum: b38a025a12c8146d6eeea5a7f2bf27d51d8ad6064da8ca9405fcf7bf9b54acd43e3b30ddd7abb9b1bfa4ddb266019133313482570ddb207de568f71ecfcf6060
+  languageName: node
+  linkType: hard
+
+"material@npm:^0.5.3":
+  version: 0.5.3
+  resolution: "material@npm:0.5.3"
+  checksum: 98c2e18f05e4bd4c16c9808050f787dba04c8601d732d985d205d8cc86da5bf8e649e0401d7d73fe2b80a55e21e7f8105537f679be4ed7343121997724932a0e
   languageName: node
   linkType: hard
 
@@ -10459,6 +10499,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: ed7fcc2ba0a33404958e34d95d18638249a68c430e30fcb6c478497d72739ba64ce9810a24f53a7d921d0c065e5b78e3822759800698167256b04659366ca4d4
+  languageName: node
+  linkType: hard
+
 "psl@npm:^1.1.33":
   version: 1.9.0
   resolution: "psl@npm:1.9.0"
@@ -11169,6 +11216,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass@npm:^1.62.1":
+  version: 1.62.1
+  resolution: "sass@npm:1.62.1"
+  dependencies:
+    chokidar: ">=3.0.0 <4.0.0"
+    immutable: ^4.0.0
+    source-map-js: ">=0.6.2 <2.0.0"
+  bin:
+    sass: sass.js
+  checksum: 1b1b3584b38a63dd94156b65f13b90e3f84b170a38c3d5e3fa578b7a32a37aeb349b4926b0eaf9448d48e955e86b1ee01b13993f19611dad8068af07a607c13b
+  languageName: node
+  linkType: hard
+
 "sax@npm:~1.2.4":
   version: 1.2.4
   resolution: "sax@npm:1.2.4"
@@ -11470,7 +11530,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-js@npm:^1.0.1, source-map-js@npm:^1.0.2":
+"source-map-js@npm:>=0.6.2 <2.0.0, source-map-js@npm:^1.0.1, source-map-js@npm:^1.0.2":
   version: 1.0.2
   resolution: "source-map-js@npm:1.0.2"
   checksum: c049a7fc4deb9a7e9b481ae3d424cc793cb4845daa690bc5a05d428bf41bf231ced49b4cf0c9e77f9d42fdb3d20d6187619fc586605f5eabe995a316da8d377c
@@ -11803,6 +11863,13 @@ __metadata:
   peerDependencies:
     webpack: ^5.0.0
   checksum: 5ee5ce2dc885369eccb55d429376e83d02570d473ac5edeb69fd65ee894847f1e51429cf078351f617bd04516ece8a1dd967f9f40464bd8fa76d903c6b2a6f08
+  languageName: node
+  linkType: hard
+
+"styled@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "styled@npm:1.0.0"
+  checksum: 31a8d0885b672c7702506c27e6765c354fbc820ee3aea3277deb81615a521f0e34773f8d007bb105362fcc8730ff1e504e67ea224ce704bb46d451aae76a7b9b
   languageName: node
   linkType: hard
 

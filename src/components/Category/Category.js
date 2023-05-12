@@ -1,4 +1,5 @@
 // import cat1 from "../../../assets/category/cat1.jpg";
+import './Category.scss';
 import Products from '../Products/Products';
 
 const Category = () => {

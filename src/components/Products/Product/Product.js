@@ -1,4 +1,5 @@
 // import prod from "../../../assets/products/earbuds-prod-1.webp";
+import './Product.scss';
 
 const Product = () => {
   return (

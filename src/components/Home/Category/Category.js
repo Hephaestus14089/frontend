@@ -1,4 +1,5 @@
 // import cat1 from "../../../assets/category/cat1.jpg";
+import './Category.scss';
 
 const Category = () => {
   return (

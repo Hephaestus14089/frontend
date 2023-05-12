@@ -7,6 +7,8 @@ import {
   FaCartPlus
 } from 'react-icons/fa';
 
+import './SingleProduct.scss';
+
 // import prod from '../../assets/products/earbuds-prod-1.webp';
 
 const SingleProduct = () => {

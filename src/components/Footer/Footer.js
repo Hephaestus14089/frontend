@@ -4,6 +4,7 @@ import {
   FaEnvelope
 } from 'react-icons/fa';
 
+import './Footer.scss';
 import Newsletter from './Newsletter/Newsletter';
 
 const Footer = () => {

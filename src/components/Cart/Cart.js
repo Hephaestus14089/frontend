@@ -1,6 +1,7 @@
 import { MdClose } from 'react-icons/md';
 import { BsCartX } from 'react-icons/bs';
 
+import './Cart.scss';
 import CartItem from './CartItem/CartItem';
 
 const Cart = ({ setShowCart }) => {
