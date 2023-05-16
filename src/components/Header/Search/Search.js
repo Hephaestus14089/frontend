@@ -4,7 +4,7 @@ import "./Search.scss";
 // import useFetch from "../../../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
 
-const Search = ({ setSearchModal }) => {
+const Search = ({ setShowSearch }) => {
     const [query, setQuery] = useState("");
     const navigate = useNavigate();
 
@@ -32,7 +32,7 @@ const Search = ({ setSearchModal }) => {
                 {/* /> */}
                 <MdClose
                     className="close-btn"
-                    onClick={() => setSearchModal(false)}
+                    onClick={() => setShowSearch(false)}
                 />
             </div>
             <div className="search-result-content">
@@ -76,3 +76,5 @@ const Search = ({ setSearchModal }) => {
         </div>
     );
 };
+
+export default Search;
