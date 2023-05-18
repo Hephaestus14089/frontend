@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="text-content">
           <h1>SALES</h1>
           <p>
-            Just some random crap...
+            Just some random nonsense...
             which all the sales ads,
             in a way, actually is.
           </p>

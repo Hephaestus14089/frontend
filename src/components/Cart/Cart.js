@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { MdClose } from 'react-icons/md';
 import { BsCartX } from 'react-icons/bs';
 
@@ -8,6 +9,7 @@ import { Context } from '../../utils/context';
 
 const Cart = ({ setShowCart }) => {
   const { cartItems, cartPrice } = useContext(Context);
+  const navigate = useNavigate();
 
   return (
     <div className="cart-panel">
@@ -31,7 +33,10 @@ const Cart = ({ setShowCart }) => {
          <div className="empty-cart">
            <BsCartX/>
            <span>Cart empty.</span>
-           <button className="return-cta">
+           <button
+             className="return-cta"
+             onClick={() => navigate("/")}
+           >
              RETURN TO SHOP
            </button>
          </div>}
