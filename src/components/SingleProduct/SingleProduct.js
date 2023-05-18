@@ -10,9 +10,10 @@ import {
 } from 'react-icons/fa';
 
 import { useParams } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
 import { productsData } from '../../assets/productsData.js';
+import { Context } from '../../utils/context';
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -22,6 +23,7 @@ const SingleProduct = () => {
 
   const [quantity, setQuantity] = useState(1);
 
+  const { handleAddToCart } = useContext(Context);
 
   return (
     <div className="single-product-main-content">
@@ -52,15 +54,19 @@ const SingleProduct = () => {
                   }}>+</span>
               </div>
 
-              <button className="add-to-cart-button">
+              <button
+                className="add-to-cart-button"
+                onClick={() => {
+                  handleAddToCart(product, quantity);
+                  setQuantity(1);
+                }}
+              >
                 <FaCartPlus size={20} />
                 ADD TO CART
               </button>
             </div>
           </div>
         </div>
-
-        {/* <RelatedProducts /> */}
       </div>
     </div>
   );
