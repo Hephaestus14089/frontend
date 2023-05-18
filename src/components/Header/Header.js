@@ -11,6 +11,7 @@ import Cart from '../Cart/Cart';
 import { Context } from '../../utils/context';
 
 const Header = () => {
+  const navigate = useNavigate();
 
   const { cartCount } = useContext(Context);
 
@@ -32,7 +33,7 @@ const Header = () => {
       <header className={`main-header ${scrolled ? "sticky-header" : ""}`}>
         <div className="header-content">
           <ul className="left">
-            <li>Home</li>
+            <li onClick={() => navigate("/")}>Home</li>
             <li>About</li>
             <li>Categories</li>
           </ul>
