@@ -13,6 +13,10 @@ const AppContext = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  useEffect(() => {
     let count = 0;
     cartItems.forEach(
       item => count += item.quantity
