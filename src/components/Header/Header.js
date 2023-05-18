@@ -12,6 +12,8 @@ import { Context } from '../../utils/context';
 
 const Header = () => {
 
+  const { cartCount } = useContext(Context);
+
   const [scrolled, setScrolled] = useState(false);
   const [showCart, setShowCart] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
@@ -45,7 +47,7 @@ const Header = () => {
               onClick={() => setShowCart(true)}
             >
               <CgShoppingCart />
-              <span>5</span>
+              {cartCount !== 0 && <span>{cartCount}</span>}
             </span>
           </div>
         </div>

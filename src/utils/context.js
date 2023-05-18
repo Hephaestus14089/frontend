@@ -13,14 +13,16 @@ const AppContext = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
-    let totalPrice = 0;
-
-    setCartPrice(
-      cartItems.forEach(
-        item => totalPrice += item?.attributes.price * item.quantity
-      )
+    let count = 0;
+    cartItems.forEach(
+      item => count += item.quantity
     );
+    setCartCount(count);
 
+    let totalPrice = 0;
+    cartItems.forEach(
+      item => totalPrice += item.attributes.price * item.quantity
+    );
     setCartPrice(totalPrice);
   }, [cartItems]);
 
