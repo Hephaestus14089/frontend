@@ -1,22 +1,26 @@
-// import cat1 from "../../../assets/category/cat1.jpg";
+import cat1 from "../../../assets/cat1.jpg";
+import prod from "../../../assets/prod.webp";
 import './Category.scss';
 
+const categories = [
+  {id: 1, title: "speakers"},
+  {id: 2, title: "headsets"},
+  {id: 3, title: "phones"},
+  {id: 2, title: "laptops"}
+];
+
 const Category = () => {
+  console.log(categories);
   return (
     <div className="shop-by-category">
       <div className="categories">
-        <div className="category">
-          {/* <img src={cat1} alt="" /> */}
-        </div>
-        <div className="category">
-          {/* <img src={cat1} alt="" /> */}
-        </div>
-        <div className="category">
-          {/* <img src={cat1} alt="" /> */}
-        </div>
-        <div className="category">
-          {/* <img src={cat1} alt="" /> */}
-        </div>
+        {categories.map(category => {
+          return (
+            <div key={category.id} className="category">
+              <img src={cat1} title={category.title} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

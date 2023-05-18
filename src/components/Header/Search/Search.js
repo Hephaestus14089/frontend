@@ -23,13 +23,13 @@ const Search = ({ setShowSearch }) => {
     return (
         <div className="search-modal">
             <div className="form-field">
-                {/* <input */}
-                {/*     autoFocus */}
-                {/*     type="text" */}
-                {/*     placeholder="Search for products" */}
-                {/*     value={query} */}
-                {/*     onChange={onChange} */}
-                {/* /> */}
+                <input
+                    autoFocus
+                    type="text"
+                    placeholder="Search for products"
+                     /* value={query}       */
+                    /* onChange={onChange} */
+                />
                 <MdClose
                     className="close-btn"
                     onClick={() => setShowSearch(false)}
